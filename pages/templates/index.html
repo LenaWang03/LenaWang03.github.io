@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  {%load static%}
+
+  <header>
+      <a href="{% url 'home' %}">Home</a> | 
+      <a href="{% url 'about' %}">About</a> |
+      <a href="{% url 'paintings' %}">Paintings</a> |
+    </header>
+  <body>
+    <img src = "{% static 'mysite\Banner.jpg' %}"
+    width= "100%"
+    >
+  </body>
+    {% block content %}
+    {% endblock %}
+</html>
